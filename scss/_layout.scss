@@ -1,0 +1,82 @@
+.container {
+  padding: 0px 42px;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.l-title h3 {
+  font-size: $title-size;
+  color: $primary-color;
+  margin-bottom: 32px;
+  span {
+    font-size: $subtitle-size;
+    color: $third-color;
+    margin-left: 16px;
+  }
+}
+
+.header {
+  background-size: cover;
+  background-repeat: no-repeat;
+  .nav {
+    background-color: rgba(50, 50, 40, 0.5);
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .nav_menu {
+      display: flex;
+      li a {
+        color: white;
+        padding: 30px 25px;
+        border-bottom: 7px solid transparent;
+        transition: 0.2s;
+        &:hover {
+          color: $primary-color;
+          border-bottom: 7px solid $primary-color;
+        }
+      }
+    }
+  }
+  h1 {
+    font-size: 44px;
+    color: $primary-color;
+    margin: 106px 0px 60px 0px;
+    span {
+      color: white;
+    }
+  }
+}
+
+.contact {
+  background: lighten($secondary-color, 75%);
+  h3 {
+    font-size: 28px;
+  }
+  .pure-form .pure-form-stacked input{
+    width:100px;
+  }
+}
+
+.footer {
+  background: $secondary-color;
+  padding: 36px 0px;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer_logo {
+    p {
+      color: lighten($secondary-color, 30%);
+      margin: 8px 0px 0px 30px;
+    }
+  }
+  .footer_media {
+    display: flex;
+    li {
+      margin-right: 20px;
+    }
+  }
+}

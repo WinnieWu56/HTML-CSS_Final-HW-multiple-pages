@@ -1,137 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-N2DTTL84LW"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-N2DTTL84LW");
+    </script>
     <title>問答｜六角學院</title>
-</head>
-<body>
-    <div class="header">
-        <div class="faqbanner">
-            <div class="nav">
-                <a href="index.html"><img src="images/logo.png" alt="Hex School logo"></a>
-                <ul>
-                    <li><a href="index.html">首頁</a></li>
-                    <li><a href="course.html">課程</a></li>
-                    <li><a href="faq.html">問答</a></li>
-                </ul>
-            </div>
-            <div class="container">
-            <h1>遇到問題了嗎？</h1>
-            <h2>別擔心，你想找的答案都在這裡！</h2>
-            <div class="box">
-                <form action="#">
-                <input type="text" value="">  
-                </form>
-                <img src="images/search-icon.png" alt="search icon">
-            </div>
-            </div>
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  </head>
+  <body>
+    <div class="header faq_header">
+        <div class="nav">
+          <div class="container">
+          <a href="index.html"><img src="images/logo.png" alt="header logo"></a>
+          <ul class="nav_menu">
+            <li><a href="index.html">首頁</a></li>
+            <li><a href="course.html">課程</a></li>
+            <li><a href="faq.html">問答</a></li>
+          </ul>
         </div>
+        </div>
+        <div class="banner">
+          <div class="container">
+          <h1>遇到問題了嗎？<br><span>別擔心，你想找的答案都在這裡！</span></h1>
+          <form class="pure-form">
+            <input type="text" class="pure-input-2-3 banner_input" />
+            <a href="#">
+            <i class="fa-solid fa-magnifying-glass"></i></a>
+          </form>
+        </div>
+      </div>
     </div>
-    <div class="faqwrap">
-        <div class="question">
-            <div class="title">
-                <h3>常見問題 #</h3>
-                <p class="smallsign">你想問的說不定也在這裡</p>
-            </div>
-            <ul>
-                <li class="q">Q：為什麼你們要用Udemy放你們的影音課程，它有甚麼好處嗎？</li>
-                <li class="a">A：它除了可上傳影音課程外，同時也能上傳我們設計出來的範例程式碼設計單選題目，並能在IOS、AndoridG;上面學習，同時也能追蹤每位學生的學習機制，讓我們放心挑選Udemy作為我們的教學平台。</li>
-            </ul>
-            <ul>
-                <li class="q">Q：影片課程有時效性嗎？</li>
-                <li class="a">A：完全沒有，此課程提供終身複習服務，你隨時可聽到我們即時更新的影音課程內容。</li>
-            </ul>
-            <ul>
-                <li class="q">Q：我很擔心學完後還是學不會網頁設計，有甚麼辦法嗎？</li>
-                <li class="a">A：課程結束後我們會提供給你網頁設計稿，做完後mail給我們，<span>service@hexschool.com</span>，我們會替你進行程式碼檢視，以確保你的觀念吸收正確。</li>
-            </ul>
+    <div class="container">
+      <div class="qa">
+        <div class="l-title">
+          <h3>常見問題 #<span>你想問的說不定也在這裡</span></h3>
+          <ul>
+            <li class="q">Q：為什麼你們要用Udemy放你們的影音課程，它有甚麼好處嗎？</li>
+            <li class="a">A：它除了可上傳影音課程外，同時也能上傳我們設計出來的範例程式碼設計單選題目，並能在IOS、Andorid上面學習，同時也能追蹤每位學生的學習機制，讓我們放心挑選Udemy作為我們的教學平台。</li>
+          </ul>
+          <ul>
+            <li class="q">Q：影片課程有時效性嗎？</li>
+            <li class="a">A：完全沒有，此課程提供終身複習服務，你隨時可聽到我們即時更新的影音課程內容。</li>
+          </ul>
+          <ul>
+            <li class="q">Q：我很擔心學完後還是學不會網頁設計，有甚麼辦法嗎？</li>
+            <li class="a">A：課程結束後我們會提供給你網頁設計稿，做完後mail給我們，<span>service@hexschool.com</span>，我們會替你進行程式碼檢視，以確保你的觀念吸收正確。</li>
+          </ul>
         </div>
-        <div class="pay">
-            <div class="title">
-                <h3>怎麼付款 #</h3>
-                <p class="smallsign">付款方式保證最多元</p>
+      </div>
+      <div class="pay">
+        <div class="l-title">
+          <h3>怎麼付款 #<span>付款方式保證最多元</span></h3>
+          <ul>
+            <li class="q">Q：請問可以分期付款嗎？</li>
+            <li class="a">A：當然沒問題，在本平台購買我們最高提供6期分期，
+              <ol>
+                <li>選擇產品後</li>
+                <li>在進入金流平台付款時可選擇信用卡分期付款</li>
+                <li>選擇期數，旁邊會附註每期應付款項</li>
+              </ol>
+            </li>
+          </ul>
+          <ul>
+            <li class="q">Q：我沒有信用卡，有沒有其他匯款方案？</li>
+            <li class="a">A：每個課程現在都提供其他付款方式，在課程連結旁就可以找到這個其他付款方式，而且我們是採用台灣第三方支付，安全又可靠。</li>
+          </ul>
+          <ul>
+            <li class="q">Q：採用其他付款流程，但還沒收到課程怎麼辦？</li>
+            <li class="a">A：課程會在48小時內寄出，如果沒有收到可以透過右下角的客服，或直接mail致我們的信箱<span>service@hexschool.com</span>我們會盡快處理以保障您的權益。</li>
+          </ul>
         </div>
-            <ul>
-                <li class="q">Q：請問可以分期付款嗎？</li>
-                <li class="a">
-                    A：當然沒問題，在本平台購買我們最高提供6期分期，
-                    <ol>
-                        <li>選擇產品後</li>
-                        <li>在進入金流平台付款時可選擇信用卡分期付款</li>
-                        <li>選擇期數，旁邊會附註每期應付款項</li>
-                    </ol>
-                </li>
-            </ul>
-            <ul>
-                <li class="q">Q：我沒有信用卡，有沒有其他匯款方案？</li>
-                <li class="a">A：每個課程現在都提供了其他付款方式，在課程連結旁就可以找到這個其他付款方式，而且我們是採用台灣第三方支付，安全又可靠。</li>
-            </ul>
-            <ul>
-                <li class="q">Q：採用其他付款流程，但還沒收到課程怎麼辦？</li>
-                <li class="a">A：課程會在48小時內寄出，如果沒有收到可以透過右下角的客服，或直接mail致我們的信箱<span>service@hexschool.com</span>我們會盡快處理以保障您的權益。</li>
-            </ul>
+      </div>
+      <div class="refund">
+        <div class="l-title">
+          <h3>我想退款 #<span>期待你再次成為我們的學生</span></h3>
         </div>
-        <div class="refund">
-            <div class="title">
-                <h3>我想退款 #</h3>
-                <p class="smallsign">期待你再次成為我們的學生</p>
-            </div>
+        <ul>
+          <li class="q">Q：如果怕線上影音課程吸收不好，可以要求退費嗎？</li>
+          <li class="a">A：沒問題！Udemy在30天內都可申請退款！
+          </li>
+        </ul>
+        <ul>
+          <li class="q">Q：Udemy如何退款？</li>
+          <li class="a">A：透過Udemy的課程頁面的選項下即可使用退款功能。</li>
+        </ul>
+        <ul>
+          <li class="q">Q：其他支付流程如何退款？</li>
+          <li class="a">A：請發信到<span>service@hexschool.com</span>並詳著以下內容：
             <ul>
-                <li class="q">Q：如果怕線上影音課程吸收不好，可以要求退費嗎？</li>
-                <li class="a">A：沒問題！Udemy在30天內都可申請退款！</li>
+              <li>退款帳戶</li>
+              <li>Udemy用戶名稱</li>
+              <li>購買時間</li>
+              <li>退款原因</li>
             </ul>
-            <ul>
-                <li class="q">Q：Udemy如何退款？</li>
-                <li class="a">A：透過Udemy的課程頁面的選項下即可使用退款功能。</li>
-            </ul>
-            <ul>
-                <li class="q">Q：其他支付流程如何退款？</li>
-                <li class="a">
-                    A：請發信到<span>service@hexschool.com</span>並詳著以下內容：
-                    <ul>
-                        <li>退款帳戶</li>
-                        <li>Udemy用戶名稱</li>
-                        <li>購買時間</li>
-                        <li>退款原因</li>
-                    </ul>
-                    <p>接下來，我們會有專人協助退款，退款後請注意：</p>
-                    <ul>
-                        <li>退款會酌收第三方支付手續費，信用卡一次付清2.8%、分期3%分六期3.5%、分12期7%、ATM為1%、超商為28元。</li>
-                        <li>退款後亦不能參與任何線上討論以及每週的線上問答</li>
-                        <li>退款後的學員在下次購買時，我們會先提供測試帳號7天再次鑑賞，確認該學員有需上這門課程，才能購買該次課程。</li> 
-                    </ul>
-                </li>
-            </ul>
-        </div>
+              <p>接下來，我們會有專人協助退款，退款後請注意：</p>
+              <ul>
+                <li>退款會酌收第三方支付手續費，信用卡一次付清2.8%、分期3%分六期3.5%、分12期7%、ATM為1%、超商為28元。</li>
+                <li>退款後亦不能參與任何線上討論以及每週的線上問答。</li>
+                <li>退款後的學員在下次購買時，我們會先提供測試帳號7天再次鑑賞，確認該學員有需上這門課程，才能購買該次課程。</li>
+              </ul>
+          </li>
+        </ul>
+      </div>
     </div>
-    <div class="contact">
-        <div class="container">
-            <h2>你就是六角的下一個學生！<br>快留下資料讓我們認識你吧</h2>
-            <div class="info">
-                <form action="#">
-                    <input type="text" name="text" id="name" placeholder="你的名字是？">
-                    <input type="text" name="mail" placeholder="example@mail.com.tw">
-                    <input class="button"type="submit" value="送　出">
-                </form>
-            </div>
-        </div>
-    </div>   
+    <div class="contact faq_contact">
+      <div class="container">
+        <h3>找不到你的問題嗎？<br>
+          直接寄信給我們解決吧</h3>
+          <form class="pure-form">
+          <input type="text" id="stacked-name" placeholder="你的姓名是？" />
+          <input type="email" id="stacked-email" placeholder="你的信箱是？" />
+          <textarea name="content" id="content" cols="30" rows="6" placeholder="你遇到什麼困難呢？"></textarea>
+          <button type="submit" class="pure-button pure-button-primary">送　出</button>
+</form>
+      </div>
+    </div>
     <div class="footer">
-        <div class="container">
-            <div class="footerlogo">
-                <a href="index.html"><img class="logo" src="images/logo.png" alt="Hex School logo"></a> 
-                <p>© 2018 hexschool</p>
-            </div>
-            <div class="social">
-                <a href="https://www.facebook.com/hexschool" target="_blank"><img class="media" src="images/facebook.png" alt="facebook"></a>
-                <a href="https://twitter.com/hexschool1" target="_blank"><img class="media" src="images/twitter.png" alt="twitter"></a>
-                <a href="https://www.instagram.com/hexschool/" target="_blank"><img class="media" src="images/instagram.png" alt="instagram"> </a>
-            </div>
+      <div class="container">
+        <div class="footer_logo">
+          <a href="index.html"
+            ><img src="images/logo.png" alt="footer logo"
+          /></a>
+          <p>© 2018 hexschool</p>
+        </div>
+        <ul class="footer_media">
+          <li>
+            <a href="https://www.facebook.com/hexschool" target="_blank"
+              ><img src="images/facebook.png" alt="hexschool fb"
+            /></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/hexschool1" target="_blank"
+              ><img src="images/twitter.png" alt="hexschool twitter"
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/hexschool/" target="_blank"
+              ><img src="images/instagram.png" alt="hexschool instagram"
+            /></a>
+          </li>
+        </ul>
+      </div>
     </div>
-              
-    </div>
-</body>
+  </body>
 </html>

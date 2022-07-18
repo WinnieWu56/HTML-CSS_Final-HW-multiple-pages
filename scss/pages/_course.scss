@@ -1,0 +1,94 @@
+.course_header {
+  background-image: url("../images/course_banner.png");
+  background-position: right center;
+  background-attachment: fixed;
+  .banner {
+    .container {
+      display: flex;
+      justify-content: space-between;
+      h1 {
+        color: white;
+        span {
+          color: $primary-color;
+          font-size: 32px;
+        }
+      }
+      .pure-button{
+        padding: 16px 40px;
+        margin-bottom: 182px;
+        border-radius: 5px;
+        font-size: 20px;
+      }
+      .banner_logo{
+        margin-top: 40px;
+        .banner_logo_html{
+          margin-right: 30px;
+        }
+      }
+    }
+  }
+}
+
+.teacher {
+  margin: 60px 0px;
+  display: flex;
+  align-items: center;
+  h3 {
+    color: $primary-color;
+    font-size: $title-size;
+    margin: 0px 66px;
+    span {
+      color: black;
+    }
+  }
+  li {
+    list-style-type: disc;
+    color: $third-color;
+  }
+}
+
+.advantage {
+  margin-bottom: 60px;
+  li {
+    list-style-type: decimal;
+    margin-left: 22px;
+  }
+}
+
+.chapter {
+  margin-bottom: 60px;
+  td {
+    padding: 20px 696px 20px 36px;
+  }
+  .grayBg {
+    background: $fourth-color;
+    &:hover {
+      background: darken($fourth-color, 20%);
+      color: lighten(black, 20%);
+    }
+  }
+  .whiteBg {
+    color: $third-color;
+    &:hover {
+      background: darken($fourth-color, 20%);
+      color: lighten($third-color, 50%);
+    }
+  }
+}
+
+.course_contact{
+  padding: 158px 0px;
+  .container{
+    display:flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    h3{
+      font-size: 30px;
+    }
+    .pure-button{
+      padding: 16px 40px;
+      border-radius: 5px;
+      font-size: 20px;
+    }
+  }
+}

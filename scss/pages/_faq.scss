@@ -1,0 +1,105 @@
+.faq_header{
+  background-image: url("../images/faq_banner.png");
+  background-position: center center;
+  background-attachment: fixed;
+  h1{
+    text-align: center;
+    color:white;
+    span{
+      font-size: 28px;
+      color:$primary-color;
+    }
+  }
+  .banner{
+    .container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .pure-form{
+      position: relative;
+    }
+    .pure-form .banner_input{
+      width:580px;
+      padding: 18px 50px 18px 14px;
+      margin-bottom: 190px;
+    }
+    i{
+      color:black;
+      font-size: 26px;
+      position: absolute;
+      right:14px;
+      top:15px;
+    }
+  }
+}
+
+.qa{
+  margin: 60px  0px;
+
+}
+
+.pay{
+  margin-bottom: 60px;
+}
+
+.refund{
+  margin-bottom: 60px;
+}
+
+.q{
+  font-size: $content-font-m;
+  margin-bottom: 8px;
+}
+.a{
+  color: $third-color;
+  margin-bottom: 36px;
+  span{
+    color:$primary-color;
+  }
+  ol li{
+    list-style-type: decimal;
+    margin-left: 40px;
+  }
+  ul {    
+    margin-bottom: 34px;
+    li
+    {
+    list-style-type: disc;
+    margin-left: 40px;
+  }
+}
+  p{
+    color: black;
+    margin-bottom: 10px;
+  }
+}
+
+.faq_contact{
+  padding: 130px 0px 98px 0px;
+  .container{
+    display:flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    h3{
+      font-size: 30px;
+    }
+  }
+  .pure-form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width:48%;
+  }
+  .pure-form input[type=text],.pure-form input[type=email],.pure-form textarea{
+    margin: 8px 0;      
+    padding: 10px 12px;
+    width:100%;
+    font-size: 16px;
+  }
+  .pure-button{
+    padding: 10px 36px;
+    border-radius:5px;  
+    margin-top: 6px; 
+  }
+}
