@@ -1382,8 +1382,11 @@ striping:
 .chapter {
   margin-bottom: 60px;
 }
+.chapter table {
+  width: 100%;
+}
 .chapter td {
-  padding: 20px 696px 20px 36px;
+  padding: 20px 0px 20px 36px;
 }
 .chapter .grayBg {
   background: #ebebeb;

@@ -57,8 +57,11 @@
 
 .chapter {
   margin-bottom: 60px;
+  table{
+    width:100%;
+  }
   td {
-    padding: 20px 696px 20px 36px;
+    padding: 20px 0px 20px 36px;
   }
   .grayBg {
     background: $fourth-color;
