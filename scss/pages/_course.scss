@@ -1,7 +1,8 @@
 .course_header {
   background-image: url("../images/course_banner.png");
   background-position: right center;
-  background-attachment: fixed;
+  // background-attachment: fixed;
+  background-size: contain;
   .banner {
     .container {
       display: flex;
@@ -95,6 +96,12 @@
       padding: 16px 40px;
       border-radius: 5px;
       font-size: 20px;
+    }
+  }
+  @include iphoneXR(){
+    .container{
+      flex-direction: column;
+      align-items: flex-start;
     }
   }
 }

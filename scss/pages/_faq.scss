@@ -5,9 +5,12 @@
   h1 {
     text-align: center;
     color: white;
+    font-size: 44px;
+    margin-top: 110px;
     span {
       font-size: 28px;
       color: $primary-color;
+      margin-top: 16px;
     }
   }
   .banner {
@@ -15,26 +18,58 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      width: 100%;
     }
     .pure-form {
+      width: 80%;
       position: relative;
     }
-    .pure-form .banner_input {
-      width: 580px;
-      padding: 18px 50px 18px 14px;
-      margin-bottom: 190px;
+    .pure-input-2-3 {
+      width: 100%;
+      padding: 18px 0px 18px 14px;
+      margin: 52px 0px 190px 0px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
     }
     i {
       color: black;
       font-size: 26px;
       position: absolute;
-      right: 14px;
-      top: 15px;
+      right:16px;
+      top: 68px;
     }
   }
 
-  @include pad(){
-    
+  @include iphoneXR() {
+    h1{
+      span{
+        font-size: 22px;
+      }
+    }
+    .banner{
+      .pure-form{
+        width:100%;
+      }
+    }
+  }
+
+  @include iphoneSE{
+    h1{
+      font-size: 38px;
+      span{
+        font-size: 18px;
+      }
+    }
+  }
+  .banner{
+    .pure-input-2-3{      
+      padding: 12px 0px 12px 14px;
+    }
+    i{
+      top: 64px;
+      font-size: 22px;
+    }
   }
 }
 
@@ -53,7 +88,11 @@
 .q {
   font-size: $content-font-m;
   margin-bottom: 8px;
+  @include iphoneSE(){
+    font-size: $content-font-m/1.1;
+  }
 }
+
 .a {
   color: $third-color;
   margin-bottom: 36px;
@@ -126,7 +165,7 @@
     .container {
       flex-direction: column;
       align-items: center;
-      h3{
+      h3 {
         text-align: center;
         margin-bottom: 20px;
       }

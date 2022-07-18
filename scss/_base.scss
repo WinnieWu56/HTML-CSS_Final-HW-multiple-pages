@@ -10,7 +10,11 @@ img{
   max-width:100%;
   height:auto;
 }
-h1,h2,h3,h4,h5,h6,li,p,td,th,input,button,textarea{
+h1{
+  font-weight: bold;
+  font-family: $primary-font;
+}
+h2,h3,h4,h5,h6,li,p,td,th,input,button,textarea{
   font-weight: bold;
   font-family: $primary-font;
   line-height: 1.5;

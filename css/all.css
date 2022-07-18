@@ -69,7 +69,12 @@ img {
   height: auto;
 }
 
-h1, h2, h3, h4, h5, h6, li, p, td, th, input, button, textarea {
+h1 {
+  font-weight: bold;
+  font-family: "微軟正黑體";
+}
+
+h2, h3, h4, h5, h6, li, p, td, th, input, button, textarea {
   font-weight: bold;
   font-family: "微軟正黑體";
   line-height: 1.5;
@@ -235,6 +240,13 @@ textarea {
   }
   .footer .container .footer_media {
     margin: 0 auto;
+    width: 40%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footer .container .footer_media li {
+    margin-right: 0px;
   }
 }
 
@@ -1260,6 +1272,7 @@ striping:
 }
 .index_header h1 {
   font-size: 44px;
+  line-height: 1.5;
   color: #00cc99;
   margin: 106px 0px 60px 0px;
 }
@@ -1491,7 +1504,7 @@ striping:
 .course_header {
   background-image: url("../images/course_banner.png");
   background-position: right center;
-  background-attachment: fixed;
+  background-size: contain;
 }
 .course_header .banner .container {
   display: -webkit-box;
@@ -1601,6 +1614,17 @@ striping:
   border-radius: 5px;
   font-size: 20px;
 }
+@media (max-width: 414px) {
+  .course_contact .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
 
 .faq_header {
   background-image: url("../images/faq_banner.png");
@@ -1610,10 +1634,13 @@ striping:
 .faq_header h1 {
   text-align: center;
   color: white;
+  font-size: 44px;
+  margin-top: 110px;
 }
 .faq_header h1 span {
   font-size: 28px;
   color: #00cc99;
+  margin-top: 16px;
 }
 .faq_header .banner .container {
   display: -webkit-box;
@@ -1626,22 +1653,51 @@ striping:
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
 }
 .faq_header .banner .pure-form {
+  width: 80%;
   position: relative;
 }
-.faq_header .banner .pure-form .banner_input {
-  width: 580px;
-  padding: 18px 50px 18px 14px;
-  margin-bottom: 190px;
+.faq_header .banner .pure-input-2-3 {
+  width: 100%;
+  padding: 18px 0px 18px 14px;
+  margin: 52px 0px 190px 0px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 .faq_header .banner i {
   color: black;
   font-size: 26px;
   position: absolute;
-  right: 14px;
-  top: 15px;
+  right: 16px;
+  top: 68px;
 }
+@media (max-width: 414px) {
+  .faq_header h1 span {
+    font-size: 22px;
+  }
+  .faq_header .banner .pure-form {
+    width: 100%;
+  }
+}
+@media (max-width: 375px) {
+  .faq_header h1 {
+    font-size: 38px;
+  }
+  .faq_header h1 span {
+    font-size: 18px;
+  }
+}
+.faq_header .banner .pure-input-2-3 {
+  padding: 12px 0px 12px 14px;
+}
+.faq_header .banner i {
+  top: 64px;
+  font-size: 22px;
+}
+
 .qa {
   margin: 60px 0px;
 }
@@ -1657,6 +1713,11 @@ striping:
 .q {
   font-size: 18px;
   margin-bottom: 8px;
+}
+@media (max-width: 375px) {
+  .q {
+    font-size: 16.3636363636px;
+  }
 }
 
 .a {
