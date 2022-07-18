@@ -13,6 +13,15 @@
     color: $third-color;
     margin-left: 16px;
   }
+  @include iphoneXR(){
+    font-size: $title-size/1.2;
+    margin-bottom: 20px;
+    span{
+      display:block;
+      margin-left: 0;      
+      font-size: $subtitle-size/1.2;
+    }
+  }
 }
 
 .header {
@@ -20,63 +29,136 @@
   background-repeat: no-repeat;
   .nav {
     background-color: rgba(50, 50, 40, 0.5);
+    position: relative;
     .container {
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
-    .nav_menu {
-      display: flex;
-      li a {
+  }
+  .nav_menu {
+    display: flex;
+  }
+  li {
+    a {
+      color: white;
+      padding: 30px 25px;
+      border-bottom: 7px solid transparent;
+      transition: 0.2s;
+      &:hover {
+        color: $primary-color;
+        border-bottom: 7px solid $primary-color;
+      }
+    }
+  }
+  .nav_mobile_menu {
+    display: none;
+  }
+  @include iphoneXR() {
+    .container {
+      padding: 0px 0px;
+      .header_logo {
+        margin-left: 42px;
+        padding: 20px 0px;
+      }
+      .nav_menu {
+        position: absolute;
+        max-height: 0px;
+        overflow: hidden;
+        top: 80px;
+        z-index: 100;
+        flex-wrap: wrap;
+        width: 100%;
+        transition: max-height 1s;
+      }
+      li {
+        width: 100%;
+        text-align: center;
+        a {
+          background: lighten($third-color, 10%);
+          padding: 10px 0px;
+          &:hover {
+            background: $primary-color;
+            color: white;
+            border-bottom: 7px solid transparent;
+          }
+        }
+      }
+      .nav_mobile_menu {
+        display: block;
         color: white;
-        padding: 30px 25px;
-        border-bottom: 7px solid transparent;
-        transition: 0.2s;
-        &:hover {
-          color: $primary-color;
-          border-bottom: 7px solid $primary-color;
+        font-size: 28px;
+        margin-right: 42px;
+      }
+    }
+  .banner .container{
+    padding: 0px 42px;
+  }
+}
+  .mobileShow .nav_menu {
+    max-height: 200px;
+  }
+}
+
+  .contact {
+    background: lighten($secondary-color, 75%);
+    h3 {
+      font-size: 28px;
+    }
+    .pure-form .pure-form-stacked input {
+      width: 100px;
+    }
+  }
+
+  .footer {
+    background: $secondary-color;
+    padding: 36px 0px;
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .footer_logo {
+        p {
+          color: lighten($secondary-color, 30%);
+          margin: 8px 0px 0px 30px;
+        }
+      }
+      .footer_media {
+        display: flex;
+        li {
+          margin-right: 20px;
+        }
+      }
+    }
+    @include iphoneXR(){
+      .container{
+        .footer_logo{
+          display: none;
+        }
+        .footer_media{
+          margin: 0 auto;
         }
       }
     }
   }
-  h1 {
-    font-size: 44px;
-    color: $primary-color;
-    margin: 106px 0px 60px 0px;
-    span {
+
+  .top {
+    i {
       color: white;
+      font-size: 28px;
+      background: $primary-color;
+      width: 50px;
+      height: 50px;
+      border-radius: 50px;
+      text-align: center;
+      padding-top: 12px;
+      margin: 20px;
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      opacity: 0.5;
+      &:hover {
+        opacity: 1;
+      }
     }
   }
-}
-
-.contact {
-  background: lighten($secondary-color, 75%);
-  h3 {
-    font-size: 28px;
-  }
-  .pure-form .pure-form-stacked input{
-    width:100px;
-  }
-}
-
-.footer {
-  background: $secondary-color;
-  padding: 36px 0px;
-  .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .footer_logo {
-    p {
-      color: lighten($secondary-color, 30%);
-      margin: 8px 0px 0px 30px;
-    }
-  }
-  .footer_media {
-    display: flex;
-    li {
-      margin-right: 20px;
-    }
-  }
-}

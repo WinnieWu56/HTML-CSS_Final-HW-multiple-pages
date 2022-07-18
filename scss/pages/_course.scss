@@ -87,6 +87,9 @@
     justify-content: space-around;
     h3{
       font-size: 30px;
+      @include pad(){
+        font-size:26px;
+      }
     }
     .pure-button{
       padding: 16px 40px;

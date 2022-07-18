@@ -1,12 +1,44 @@
 .index_header {
   background-image: url("../images/home_banner.png");
-  background-position: right center;
+  background-position: center center;
   background-attachment: fixed;
-  .pure-button{
+  h1 {
+    font-size: 44px;
+    color: $primary-color;
+    margin: 106px 0px 60px 0px;
+    span {
+      color: white;
+    }
+  }
+  .pure-button {
     padding: 16px 40px;
     margin-bottom: 182px;
     border-radius: 5px;
     font-size: 20px;
+  }
+
+  @include iphoneXR() {
+    h1 {
+      font-size: 32px;
+      margin: 96px 0px 30px 0px;
+    }
+    .pure-button {
+      padding: 12px 30px;
+      margin-bottom: 220px;
+      font-size: 16px;
+    }
+  }
+
+  @include iphoneSE(){
+    h1{
+      font-size: 29px;
+      margin: 106px 0px 30px 0px;
+    }
+    .pure-button {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin-bottom: 182px;
+    }
   }
 }
 
@@ -53,6 +85,30 @@
       }
     }
   }
+
+  @include pad() {
+    ul {
+      .course_item {
+        width: 32%;
+      }
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+
+  @include iphoneXR() {
+    .course_btn {
+      display: none;
+    }
+    ul {
+      flex-wrap: wrap;
+      .course_item {
+        width: 100%;
+        margin-bottom: 16px;
+      }
+    }
+  }
 }
 
 .compare {
@@ -83,33 +139,74 @@
   .highlight {
     color: $primary-color;
   }
+  @include iphoneXR() {
+    .m-hide {
+      display: none;
+    }
+  }
 }
 
-.index_contact{
+.index_contact {
   padding: 130px 0px 98px 0px;
-  .container{
-    display: flex;    
+  .container {
+    display: flex;
     justify-content: space-around;
     align-items: center;
-    h3{
+    h3 {
       font-size: 30px;
     }
-    .pure-form{
+    .pure-form {
       display: flex;
       flex-direction: column;
       align-items: flex-end;
-      width:48%;
+      width: 48%;
     }
-    .pure-form input[type=email],.pure-form input[type=text]{
-      margin: 8px 0;      
+    .pure-form input[type="email"],
+    .pure-form input[type="text"] {
+      margin: 8px 0;
       padding: 10px 12px;
-      width:100%;
+      width: 100%;
       font-size: 16px;
     }
-    .pure-button{
+    .pure-button {
       padding: 10px 36px;
-      border-radius:5px;  
-      margin-top: 6px; 
+      border-radius: 5px;
+      margin-top: 6px;
+      @include pad() {
+        padding: 10px 28px;
+      }
+    }
+  }
+
+  @include pad() {
+  padding: 120px 0px 98px 0px;
+    .container {
+      h3 {
+        font-size: 26px;
+      }
+      .pure-form {
+        width: 40%;
+      }
+    }
+  }
+
+  @include iphoneXR() {
+    .container {
+      flex-direction: column;
+      h3{
+        margin-bottom: 20px;
+      }
+      .pure-form {
+        width: 100%;
+      }
+    }
+  }
+
+  @include iphoneSE(){
+    .container{
+      h3{
+        font-size: 24px;
+      }
     }
   }
 }
