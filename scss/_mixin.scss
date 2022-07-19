@@ -4,6 +4,12 @@
   }
 }
 
+@mixin phone {
+  @media(max-width:568px){
+    @content;
+  }  
+}
+
 @mixin iphoneXR{
   @media(max-width:414px){
     @content;

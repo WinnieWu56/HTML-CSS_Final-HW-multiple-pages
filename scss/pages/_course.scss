@@ -1,29 +1,99 @@
 .course_header {
   background-image: url("../images/course_banner.png");
   background-position: right center;
-  // background-attachment: fixed;
-  background-size: contain;
+  background-attachment: fixed;
+  background-size: cover;
   .banner {
     .container {
       display: flex;
       justify-content: space-between;
       h1 {
         color: white;
+        font-size: 44px;
+        margin: 110px 0px 100px 0px;
         span {
           color: $primary-color;
-          font-size: 32px;
+          font-size: 26px;
         }
       }
-      .pure-button{
-        padding: 16px 40px;
-        margin-bottom: 182px;
+      .pure-button {
+        padding: 16px 38px;
         border-radius: 5px;
-        font-size: 20px;
+        font-size: 26px;
+        margin-bottom: 184px;
       }
-      .banner_logo{
+      .banner_logo {
         margin-top: 40px;
-        .banner_logo_html{
+        .banner_logo_html {
           margin-right: 30px;
+        }
+      }
+    }
+  }
+
+  @include pad() {
+    .banner {
+      .container {
+        h1 {
+          font-size: 38px;
+          span {
+            font-size: 22px;
+          }
+        }
+      }
+    }
+  }
+
+  @include phone() {
+    .banner {
+      .container {
+        h1 {
+          font-size: 42px;
+          margin: 100px 0px 60px 0px;
+          span {
+            font-size: 26px;
+          }
+        }
+        .pure-button {
+          padding: 12px 30px;
+          margin-bottom: 200px;
+          font-size: 16px;
+        }
+        .banner_logo {
+          display: none;
+        }
+      }
+    }
+  }
+
+  @include iphoneXR() {
+    .banner {
+      .container {
+        h1 {
+          font-size: 32px;
+          margin: 180px 0px 60px 0px;
+          span {
+            font-size: 22px;
+          }
+        }
+      }
+    }
+  }
+
+  @include iphoneSE() {
+    .banner {
+      .container {
+        h1 {
+          font-size: 28px;
+          margin: 106px 0px 50px 0px;
+          span {
+            font-size: 20px;
+          }
+        }
+        .pure-button {
+          padding: 10px 20px;
+          font-size: 16px;
+          margin-bottom: 160px;
         }
       }
     }
@@ -34,17 +104,63 @@
   margin: 60px 0px;
   display: flex;
   align-items: center;
-  h3 {
-    color: $primary-color;
-    font-size: $title-size;
-    margin: 0px 66px;
-    span {
-      color: black;
+  .teacher_info {
+    display: flex;
+    align-items: center;
+    h3 {
+      color: $primary-color;
+      font-size: $title-size;
+      margin: 0px 66px;
+      span {
+        color: black;
+        display: block;
+      }
+    }
+    li {
+      list-style-type: disc;
+      color: $third-color;
     }
   }
-  li {
-    list-style-type: disc;
-    color: $third-color;
+
+  @include phone() {
+    img {
+      width: 40%;
+    }
+    .teacher_info {
+      flex-direction: column;
+      margin-left: 16px;
+      h3 {
+        margin-bottom: 8px;
+        font-size: $title-size/1.2;
+        margin: 0px 0px;
+        span {
+          display: inline;
+        }
+      }
+      ul {
+        margin-left: 46px;
+      }
+    }
+  }
+
+  @include iphoneXR() {
+    .teacher_info {
+      margin-left: 4px;
+      img {
+        width: 30%;
+      }
+      h3 {
+        margin-bottom: 8px;
+        font-size: $title-size/1.4;
+        margin: 0px 0px;
+        span {
+          display: inline;
+        }
+      }
+      li{
+        font-size: 14px;
+      }
+    }
   }
 }
 
@@ -58,8 +174,8 @@
 
 .chapter {
   margin-bottom: 60px;
-  table{
-    width:100%;
+  table {
+    width: 100%;
   }
   td {
     padding: 20px 0px 20px 36px;
@@ -80,27 +196,41 @@
   }
 }
 
-.course_contact{
+.course_contact {
   padding: 158px 0px;
-  .container{
-    display:flex;
+  .container {
+    display: flex;
     align-items: flex-end;
     justify-content: space-around;
-    h3{
+    h3 {
       font-size: 30px;
-      @include pad(){
-        font-size:26px;
-      }
     }
-    .pure-button{
+    .pure-button {
       padding: 16px 40px;
       border-radius: 5px;
       font-size: 20px;
     }
   }
-  @include iphoneXR(){
-    .container{
+
+  @include pad() {
+    .container {
+      h3 {
+        font-size: 26px;
+      }
+    }
+  }
+
+  @include phone() {
+    .container {
       flex-direction: column;
+      align-items: center;
+      h3 {
+        margin-bottom: 20px;
+      }
+    }
+  }
+  @include iphoneXR() {
+    .container {
       align-items: flex-start;
     }
   }
